@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.12
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 2.0.3
+mlflow_version: 2.12.2
+model_size_bytes: 91227
+model_uuid: f2125218051a4d9a942fcacaabe2c9b9
+run_id: ce41d8d60252462daa7961bbf5b376f5
+signature:
+  inputs: '[{"type": "double", "name": "umap_x", "required": true}, {"type": "double",
+    "name": "umap_y", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-05-10 08:55:20.801336'
